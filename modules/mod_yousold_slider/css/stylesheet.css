@@ -1,0 +1,145 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Copyright © since 2077 Youjoomla LLC. All Rights Reserved.         ||
+|| # This file may not be redistributed in whole or significant part. # ||
+|| # ---------------- THIS IS NOT FREE SOFTWARE ---------------- #      ||
+|| # http://www.youjoomla.com | http://www.youjoomla.com/license.html # ||
+|| #################################################################### ||
+\*======================================================================*/
+.Yousold_Slider {
+	display:block;
+	overflow:hidden;
+	position:relative;
+	border:none;
+	background:#fff;
+	padding:0;
+	margin:0 auto;
+}
+#Yousold_outer {
+	display:block;
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	margin:0px;
+}
+#Yousold_inner {
+	display:block;
+	position:relative;
+	margin:0px;
+	border:none;
+	overflow:hidden;
+}
+.Yousold_slide {
+	display:block;
+	position:relative;
+	overflow:hidden;
+	background:#fff;
+	border:0;
+	margin:0px;
+	padding:0;
+}
+.Yousold_slide .imgholder {
+	position:absolute;
+	left:0;
+	display:block;
+	overflow:hidden;
+	margin:0 auto;
+	padding:0px;
+	background:none;
+	border:none;
+}
+.Yousold_slide img {
+	margin:0;
+	padding:0;
+}
+.yousold_title {
+	display:none;
+}
+#title_container {
+	display:block;
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:auto;
+	margin:0;
+	padding:0 10px;
+	height:45px;
+	line-height:45px;
+	font-size:14px;
+	font-weight:bold;
+	z-index:10000;
+}
+#title_container a {
+	color:#fff;
+}
+/* navigation*/
+.navContainer {
+	display:block;
+	position:absolute;
+	clear:both;
+	text-align:left;
+	margin:0px auto;
+	padding:0;
+	bottom:0px;
+	left:0;
+	height:45px;
+	overflow:hidden;
+	z-index:100;
+}
+#Yousold_inner_nav {
+	display:block;
+	position:relative;
+}
+#Yousold_nav {
+	display:block;
+	position:absolute;
+	overflow:hidden;
+	margin:0;
+	height:45px;
+	padding:0 0 0 20px;
+	background:url(../images/trans.png) repeat;
+}
+.nav_inner {
+	display:block;
+	position:relative;
+	width:5000px;
+}
+.navContainer a.Yousold_navLink {
+	margin:20px 10px 0px 0px;
+	width:12px;
+	padding:0!important;
+	height:11px;
+	overflow:hidden;
+	display:block;
+	position:relative;
+	float:left;
+	background-image:url(../images/nav.png);
+	background-position:left 11px;
+}
+.navContainer a.selected,
+.navContainer a.Yousold_navLink:hover {
+	background-position:left top;
+}
+.yjsquare.yjys,
+.yjsquare.yjys .yjsquare_in,
+.module.yjys,
+.moduletable.yjys {
+	margin:0!important;
+	padding:0!important;
+	border:none;
+}
+.loadbar {
+	display:block;
+	height:5px;
+	background:#000;
+	position:absolute;
+	bottom:45px;
+	z-index:20000;
+	overflow:hidden;
+}
+.loadbar_in {
+	display:block;
+	height:5px;
+	background:#fff;
+	position:absolute;
+}

@@ -1,0 +1,783 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*CENTER TOP IS THE TOP PART OF THE SITE. SEE yjsg_main.php FOR REFERENCE*/
+#centertop{
+	text-align:left;
+	margin:0 auto;
+	clear:both;
+	position:relative;
+}
+#header {
+	text-align:left;
+	position:relative;
+	padding:10px 0 5px 0;
+	overflow:hidden;
+	z-index:1000;
+}
+
+#logo {
+	float:left;
+	text-align:left;
+	overflow:hidden;
+}
+
+/* LOGO HOMEPAGE LINK */
+#logo a {
+	text-indent:-7500px;
+	display:block;
+	text-decoration:none;
+	width:100%;
+}
+
+/* main body layouts with  side modules
+--------------------- */
+/* HOLDER DIV CONTAINS LEFT, MAINBODY, RIGHT AND ALL INSETS */
+#holder, #holder2, #holder3 {
+	height:100% !Important;
+	height:1%;
+	overflow:hidden;
+	margin:0 auto;
+	text-align:center;
+	padding:5px 0;
+}
+
+/* layout1.php , layout2.php, layout3.php reset and layout1.php main floats. layout 1 does not contain insettop and insetbottom*/
+#leftblock, #midblock, #rightblock, #insetblock, #insetsholder_2t, #insetsholder_2b, #insetsholder_3t, #insetsholder_3b {
+	height:100% !Important;
+	height:1%;
+	overflow:hidden;
+	text-align:left;
+	float:left;
+}
+
+/* layout2.php*/
+#holder2 #midblock {
+	float:left;
+}
+
+#holder2 #leftblock, #holder2 #rightblock, #holder2 #insetblock {
+	float:right;
+}
+
+#holder2 #insetsholder_2t {
+	float:left;
+}
+
+#holder2 #insetsholder_2b {
+	float:right;
+}
+
+/*layout3.php*/
+#holder3 #midblock {
+	float:right;
+}
+
+#holder3 #leftblock, #holder3 #rightblock, #holder3 #insetblock {
+	float:left;
+}
+
+#holder3 #insetsholder_3t {
+	float:right;
+}
+
+#holder3 #insetsholder_3b {
+	float:left;
+}
+
+.clearm {
+	clear:both;
+	height:1px;
+	overflow:hidden;
+}
+
+/*END DEFAULT GRID LAYOUT*/
+
+/*BEGING YJSIMPLEGRID 
+#yjsg1 contains top1  - top5
+#yjsg2 contains adv1 - adv5
+#jsg3 contains user1 - user5
+#jsg4 contains user6 - user10
+#jsg5 contains user11 - user15
+#yjsg6 contains user16 - user20
+#yjsg7 contains user21 - user25
+#yjsgheadergrid contains logo div ,  header1 - header3
+#yjsgbodytop contains bodytop1 - bodytop3
+#yjsgbodybottom  contains boddybottom1 - bodybottom3
+*/
+#yjsgheadergrid {
+	float:right;
+	overflow:hidden;
+	height:auto;
+	margin:0;
+	padding:0;
+}
+
+#yjsg1, #yjsg2, #yjsg3, #yjsg4, #yjsg5, #yjsg6, #yjsg7, #yjsgbodytop, #yjsgbodybottom {
+	margin:0px auto 0px auto;
+	text-align:center;
+	overflow:hidden;
+	height:auto;
+	width:100%;
+	padding:0px 0;
+}
+#yjsg2{
+	margin-top:0;
+}
+#yjsgbodytop, #yjsgbodybottom {
+	width:100%;
+	padding:0 0 0px 0;
+	margin:0px 0 0px 0;
+	clear:both;
+}
+
+/* MAIN MODULE CONTAINER CLASS. FOR SPECIFIC STYLING
+   USE #user1 .yjsgxhtml or #user1 .yjsgxhtml .yjsquare  */
+.yjsgxhtml {
+	float:left;
+	clear:right;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+.yjsgxhtml .yjsquare_in {
+}
+
+/* EXAMPLE OF LAST MODULE IN THE GRID BG IMAGE OVERRIDE 
+   WE USED GRID1 MODULE POSITION TOP5. USEFULL FOR INSET LINE SEPARATOR BETWEEN MODULES*/
+#yjsg1 #top5 {
+/*background:none;*/
+}
+
+/* GUTTERS */
+/* SQUARE MODULES GUTTER */
+.yjsgxhtml .yjsquare {
+	margin:0 0;
+	padding:0 0;
+}
+
+/* yjplain */
+.yjplain{
+	padding:5px 10px;
+}
+.yjplain p {
+	padding:5px 10px;
+}
+
+/* KEEP LEFT, RIGHT, INSET, INSETTOP, INSET BOTTOM OF THE EDGES */
+#insetsholder_2t, #insetsholder_2b {
+	padding:0;
+	margin:0px 0 0 0;
+}
+
+.inside {
+	margin:0;
+	padding:0px 3px;
+	overflow:hidden;
+}
+
+/*KEEP MAINBODY GRID, BODYTOPS AND BODYBOTTOMS OF THE EDGE
+--------------------- */
+.insidem {
+	padding:0px 10px;
+	margin:0 0;
+}
+
+/*END GUTTERS*/
+/*FOOTER AND FOOTER LINKS
+--------------------- */
+#footer {
+	clear:both;
+	text-align:center;
+	overflow:hidden;
+	margin:0 auto;
+	padding:5px 0;
+	position:relative;
+}
+
+#youjoomla {
+	clear:both;
+	text-align:left;
+	padding:5px 10px;
+	overflow:hidden;
+}
+
+#footmod {
+	clear:both;
+	text-align:left;
+	padding:0;
+	margin:0px;
+	overflow:hidden;
+}
+
+#cp {
+	text-align:left;
+	padding:2px 0px;
+	overflow:hidden;
+}
+
+.yjsgcp span {
+	text-transform:capitalize;
+}
+
+.validators,.yjsgcp {
+	display:block;
+	clear:both;
+}
+/*RTL LINKS*/
+a.tdir {
+	font-size:80%;
+}
+/*FONT RESIZER LINKS*/
+a.fs {
+	font-size:110%;
+}
+.yjsglogo {
+	position:absolute;
+	right:10px;
+	display:block;
+	top:10%;
+	height:48px;
+	width:229px;
+	margin:0;
+	padding:0;
+	background: url(../images/yjsglogo.png) no-repeat center center;
+}
+.yjsglogo span{
+	line-height:999px;
+}
+#joomlacredit {
+	padding:3px 0px 3px 0px;
+	text-align:left;
+	text-indent:10px;
+	margin:0 auto;
+}
+
+/* DEFAULT SQUARE MODULES. FOR ROUND MODULES OPEN rounded.css
+ALSO APPLIED ADDITIONAL MODULE CLASS FOR DIFFERENT MODULE STYLES. 
+TO ACTIVATE THEM ADD _yj1 or _yj2 IN MODULE MANAGER Module Class Suffix TEXT INPUT.
+STYLE FOR THESE MODULES IS IN COLOR.css file where COLOR IS YOUR CURRENT DEFAULT SITE STYLE
+--------------------- */
+/* MAIN MODULE HOLDER*/
+.yjsquare, .yjsquare_yj1, .yjsquare_yj2, .yjsquare_yj3, .yjsquare_yj4 {
+	margin: 5px 0 5px 0px!Important;
+	padding: 0px;
+	clear: both;
+	display:block;
+	height:100% !Important;
+	height:1%;
+	overflow:hidden;
+}
+
+/* MODULE TITLE */
+.yjsquare h4, .yjsquare_yj1 h4, .yjsquare_yj2 h4, .yjsquare_yj3 h4, .yjsquare_yj4 h4 {
+	text-transform: capitalize;
+	overflow:hidden;
+	padding:0;
+	margin:5px;
+	font-size:170%;
+}
+
+/* MODULE TITLE SPAN*/
+.yjsquare h4 span, .yjsquare_yj1 h4 span, .yjsquare_yj2 h4 span, .yjsquare_yj3 h4 span, .yjsquare_yj4 h4 span{
+	text-transform: capitalize;
+	overflow:hidden;
+}
+
+/* MODULE CONTENT*/
+.yjsquare_in, .yjsquare_yj1 .yjsquare_in, .yjsquare_yj2 .yjsquare_in, .yjsquare_yj3 .yjsquare_in, .yjsquare_yj4 .yjsquare_in {
+	overflow:hidden;
+	padding: 0px;
+}
+
+/* MODULE p ELEMENT*/
+.yjsquare p, .yjsquare_yj1 p, .yjsquare_yj2 p, .yjsquare_yj3 p, .yjsquare_yj4 p {
+	overflow:hidden;
+	padding:3px;
+}
+
+/*FOOTER MODULE STYLE
+--------------------- */
+#footmod .yjsquare {
+	padding:0;
+	margin:0;
+}
+
+#footmod .yjsquare h4 {
+}
+
+#footmod .yjsquare h4 span {
+}
+
+#footmod li, #footmod li:hover {
+	list-style-type:none;
+	list-style-image:none;
+	background:none;
+}
+
+#footmod ul {
+	padding:0;
+	margin:0;
+}
+
+#footmod ul li {
+	display: inline;
+	margin:0;
+	padding:0 10px 0 0;
+}
+
+#footmod ul li a {
+}
+
+/*PATHWAY*/
+#pathway {
+	margin:5px 10px 0 10px;
+	padding:5px 10px;
+}
+
+#pathway .yjsg_breadcrumbs a.pathway {
+	margin:0 5px 0 0;
+	padding:0 15px 0 0;
+}
+
+/* ADDITIONAL MODULE STYLES */
+/*mod_poll
+--------------------- */
+.pollbuttons {
+	margin:0 auto;
+	text-align:center;
+}
+
+/*login module
+--------------------- */
+#modlgn_passwd, #modlgn_username {
+	width: 95%;
+	height:16px;
+	padding-left: 3px;
+	padding-top:3px;
+}
+
+/*searchbox
+--------------------- */
+.search {
+}
+
+.search .inputbox {
+}
+
+/*BANNER MODULE AND IMAGE .banner CLASS.
+USED FOR POSITIONING WHEN RESIZING LOGO AND HEADER BLOCK*/
+#yjsgheadergrid .bannergroup, #yjsgheadergrid .banner {
+	padding:15px 0 0 0;
+	text-align:right;
+}
+
+/* MODULE NEWS FLASH */
+div.yjsg-newsflash {
+	overflow: hidden;
+}
+
+div.yjsg-newsflash div.item {
+	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+div.yjsg-newsflash div.last {
+	padding-bottom: 0px;
+}
+
+/* QUICK NAVIGATION FOOTER */
+
+ul.quick_nav {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background:none;
+}
+
+ul.quick_nav li {
+	display:block;
+	width:50%;
+	float:left;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background:none;
+	overflow:hidden;
+}
+
+ul.quick_nav li a {
+	height: 26px;
+	line-height: 20px;
+	text-decoration: none;
+	display: block;
+	text-decoration: none;
+	padding:5px 0 0 15px;
+}
+/* DEFAULT GRID OVERRIDES AND ADDITIONAL CSS. 
+NOTE! DO NOT EDIT ABOVE. USE CSS OVERRIDE FOR CHANGES. 
+IS EASIER TO SET BACK TO DEFAULT IF YOU MAKE MISTAKE.
+HERE IS CSS OVERRIDE EXAMPLE 
+http://www.youjoomla.com/how-to-use-module-css-override.html*/
+
+/********************\
+*******YOUSOLD********
+\********************/
+.white_holder{
+	display:block;
+	margin:0 auto;
+	padding:0 30px;
+	overflow:hidden;
+	position:relative;
+}
+.yj_clear{
+	display:block;
+	clear:both;
+}
+/***YOUSOLD SLIDER***/
+.yousold_shadow{
+	position:relative;
+	display:block;
+	overflow:hidden;
+	padding:5px;
+}
+.yousold_ribbon{
+	position:absolute;
+	display:block;
+	width:125px;
+	height:90px;
+	right:770px;
+	top:0;
+	z-index:999;
+}
+/*********/
+#yjsg3{
+	padding-top:0;
+}
+/***MULTIMEDIA BOX MENU***/
+.ysmb .yjsquare_in{
+	padding:0!important;
+}
+.ysmb p{
+	float:left;
+	width:100%;
+	font-size:100%;
+}
+.ysmb a.popbox,
+.ysmb a.popboxv{
+	padding:0!important;
+	float:left!important;
+	clear:none;
+	width:91px!important;
+	height:56px!important;
+    border:none!important;
+	margin:0 10px 10px 0!important;
+}
+/***MODULE SAMPLA YJ1 AND YJ2***/
+.yj1,.yj2{
+	margin:0 2px!important;
+	padding:10px 0!important;
+	border-radius:2px;
+}
+.yj1 .yjsquare_in{
+	padding:0 10px;
+}
+.yj1 h4,.yj2 h4{
+	margin:0 13px;
+	font-size:14px;
+}
+/***MODULE STYLE YJ2***/
+.yj2 .yjsquare_in{
+	padding:0 10px;
+}
+.yj2 h4{
+	font-size:170%;
+}
+/***MODULE STYLE SHADOW***/
+.left_shadow,.right_shadow{
+	display:block;
+	height:15px;
+}
+/***YJ LIVE SEARCH***/
+.yj1 #defaultfeedLiveSearch.yj_inputbox{
+	height:22px;
+	font-size:100%;
+	border-radius:2px;
+}
+.yj1 .defaultfeed{
+	position:relative;
+}
+.yj1 .button{
+	width:40px;
+	height:33px;
+	position:absolute;
+	right:3%;
+	top:0;
+	text-indent:-999px;
+	border:none;
+	padding:0;
+	margin:0;
+	cursor:pointer;
+}
+.LiveSearchResults a.next,
+.LiveSearchResults a.back {
+	width:45px;
+	height:25px;
+	line-height:25px;
+}
+/***CUSTOM PARAGRAPH USER1***/
+.paragraph_1{
+	line-height:19px;
+	font-size:130%;
+	text-align:center;
+}
+/***YOUYORK MODULE USER6***/
+#yjsg4{
+	overflow:visible;
+}
+.ysyy{
+	overflow:visible;
+}
+.ysyy h4 span{
+	font-size:11px;
+	margin:0 0 -15px 0;
+	padding:0;
+	text-align:center;
+	display:block;
+}
+.ysyy h4{
+	padding:15px 0 0 0;
+	position:relative;
+	text-align:center;
+	font-size:200%;
+}
+.ysyy .yjsquare_in{
+	padding:0px 0;
+	overflow:visible;
+}
+.ysyy .yy_slideitems,
+.ysyy .yy_slideitems_in{
+	background:none;
+	padding:0;
+}
+.ysyy .yy_slideitems {
+	padding:0 0 50px 0;
+}
+/*navigation*/
+.yy_container .linkForward,
+.yy_container .linkBackward {
+	width:26px;
+	height:53px;
+	right:-30px;
+	top:20%;
+}
+.yy_container .linkBackward{
+	left:-30px;
+}
+.yy_container .linkForward:hover{
+	background-position:right bottom;
+}
+.yy_container .linkBackward:hover{
+	background-position:left bottom;
+}
+/***YJME YORK***/
+.ysyy .yjme_item {
+	width:25%;
+	float:left;
+	clear:none;
+	margin:0;
+}
+.ysyy .yjme_item_in{
+	padding:10px;
+	margin:0;
+	border:none;
+}
+.ysyy .imageholder{
+	border:none!important;
+	padding:0!important;
+	margin:5px 0!important;
+}
+.ysyy .item_cdate{
+	margin:0 5px;
+	font-size:90%;
+}
+.ysyy p.item_intro{
+	margin:0 5px;
+	float:left;
+	padding:0;
+	font-size:90%;
+}
+.ysyy a.item_readmore{
+	border:none;
+	font-size:90%;
+	padding:0;
+	width:65px;
+	margin:10px 0;
+}
+.ysyy a.item_readmore span{
+	padding:0;
+}
+/*Image Loupe*/
+a.ysme_zoom{
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	width:40px;
+	height:40px;
+	text-indent:-9999px;
+	z-index:990;
+}
+/***MIDBLOCK***/
+.top_midblock_bg,.bottom_midblock_bg{
+	height:0px;
+}
+/***RIGHTBLOCK, LEFTBLOCK, INSETBLOCK***/
+#rightblock .inside,#leftblock .inside,#insetblock .inside{
+	padding:0 0 0 20px;
+}
+/***YJ MORTGAGE CALCULATOR***/
+.ysmc{
+	margin:45px 2px 20px 2px!important;
+	border-radius:2px;
+}
+.ysmc .yjsquare_in{
+	padding:0px;
+}
+.ysmc h4{
+	margin:10px;
+	font-size:170%;
+}
+.yj_mor_cal.ysmc{
+	margin-top:0!important;
+}
+.yj_mor_cal.ysmc p{
+	border:none;
+	text-align:left;
+	font-size:90%;
+	background:none;
+	padding:0 10px;
+	margin:0;
+}
+.ysmc #yj_mor_form{
+	padding:10px;
+	margin:20px 0;
+}
+.ysmc .yj_mor_lines label{
+	line-height:28px;
+	font-weight:normal;
+	font-size:90%!important;
+}
+.ysmc .boxFocus,.ysmc #textC,.ysmc #textD{
+	font-size:90%;
+	margin:5px 0!important;
+	border-radius:2px;
+	width:150px;
+	height:28px;
+	padding-left:5px;
+}
+.ysmc #label_resultbox{
+	font-weight:normal;
+	padding:10px 0 0 0;
+	margin:0;
+	text-align:left;
+	font-size:100%;
+	border:none;
+}
+.ysmc #resultbox{
+	font-size:250%;
+	text-align:left!important;
+}
+/***MODULE SAMPLA YJ3***/
+.yj3{
+	border-radius:2px;
+	margin:0 2px!important;
+	padding:5px!important;
+}
+.yj3 .yjsquare_in{
+	padding:0px 5px;
+}
+/***SOCIALS***/
+.yj_socials{
+	padding:15px 0;
+	display:block;
+	height:20px;
+}
+/***BOTTOM GRIDS***/
+.bgrids_bg{
+	margin:10px 0 0 0;
+}
+.bgrids_bg .yjsquare{
+	padding:0px 15px;
+}
+/***YOUSOLD LIST***/
+ul.yousold_list li{
+	padding:7px 15px;
+	font-size:100%;
+}
+/***SUBSCRIBE USER20***/
+#subscribe_holder{
+	display:block;
+	overflow:hidden;
+	clear:both;
+	margin:0 0 15px 0;
+}
+.subscribe .yjsquare_in{
+	padding:10px 5px;
+}
+.subscribe p{
+	margin:0 0 10px 0;
+}
+.subscribe .inputbox,.subscribe .inputbox_email{
+	line-height:30px;
+	font-size:11px;
+	width:110px;
+	height:27px;
+	line-height:30px;
+	padding:0 0 0 5px;
+	margin:0;
+	border-radius:2px;
+}
+.subscribe .inputbox_email{
+	width:207px;
+	height:27px;
+}
+.yousold_button{
+	padding:2px 0 0 0;
+	display:block;
+	overflow:hidden;
+	float:right;
+	border:none;
+	width:73px;
+	height:30px;
+	text-transform:uppercase;
+	font-size:120%;
+}
+a.unsubscribe:hover,
+a.unsubscribe:focus{
+	text-decoration:underline;
+}
+#subscribe_holder form{
+	margin:0!important;
+}
+/***FOOTER***/
+.footer_l_shadow,.footer_r_shadow{
+	height:2px;
+	display:block;
+}
+/***DROPLINE EXTRA***/
+.subul_main.dropline.level1{
+	width:98%;
+	border-radius:2px;
+}

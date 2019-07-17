@@ -1,0 +1,1078 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*----------------------------------------------------------------------
+Common Elements
+----------------------------------------------------------------------*/
+li.even, li.odd {
+	background:none;
+	border-bottom:1px solid #e4e4e4;
+	margin:0;
+	padding:5px 0;
+}
+#k2Container h1, #k2Container h2, #k2Container h3, #k2Container h4, #k2Container h5, #k2Container h6 {
+	font-family:inherit;/* from body style */
+	font-weight:normal;
+}
+#k2Container .componentheading{
+	margin:10px 5px;
+}
+/*----------------------------------------------------------------------
+Category view html/com_k2/default/category.php
+----------------------------------------------------------------------*/
+/* main category*/
+div.itemListCategory {
+	background:#eee;
+	margin:4px 5px;
+	padding:10px;
+	border:none;
+}
+/* main category title*/
+div.itemListCategory h2 {
+	line-height:18px;
+}
+/* main category image*/
+div.itemListCategory img {
+	border:1px solid #e4e4e4;
+	padding:0;
+}
+div.subCategory {
+	background:none;
+	border:none;
+	border-bottom:1px dashed #dddddd;
+	margin:4px;
+	padding:20px 8px;
+	display:block;
+	overflow:hidden;
+}
+/* sub cat image*/
+.subCategory .curtain{
+	float:left;
+	margin-right:10px;
+}
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img {
+	background:none;
+	padding:0px;
+	border:none;
+	margin:0 15px 0 auto;
+}
+/* sub cat title */
+div.subCategory h2 {
+	font-size:200%;
+	margin:0;
+	font-weight:normal;
+}
+div.subCategory p{
+	margin:0;
+}
+/* sub cat read more */
+a.subCategoryMore{
+	margin:15px;
+	padding:0 0 0 20px;
+	float:right;
+	height:42px;
+	font-size:120%;
+	line-height:42px;
+	text-align:center;
+}
+a.subCategoryMore span{
+	padding:0 20px 0 0px;
+	display:block;
+	height:42px!important;
+	line-height:42px;	
+}
+/*----------------------------------------------------------------------
+Cat item view  html/com_k2/default/category_item.php
+----------------------------------------------------------------------*/
+.catItemView {
+	margin:0px 20px 0px 0;
+	border-bottom:1px dashed #dddddd;
+	padding:20px 5px!important;
+}
+/* this is where image and intro text are*/
+div.catItemBody {
+	display:block;
+	overflow:hidden;
+	clear:both;
+	padding:5px;
+}
+div.catItemHeader {
+	float:left;
+	clear:both;
+}
+/* cat item title*/
+div.catItemHeader h3.catItemTitle {
+	margin:10px 0 5px 0;
+	padding:0;
+	line-height:inherit;
+}
+/* cat author*/
+span.catItemAuthor {
+	padding:0;
+	margin:0 5px 0 0!important;
+	float:left;
+	font-size:90%;
+	color:#aaaaaa;
+}
+/* cat created date*/
+span.catItemDateCreated {
+	padding:0;
+	margin:0;
+	float:left;
+	color:#aaaaaa!important;
+}
+/* cat item image */
+/* this div should have bg color or border if you need some around image styling*/
+div.catItemImageBlock {
+	padding:0px!important;
+	margin:0 10px 10px auto;
+	overflow:hidden;
+	display:block;
+	background:none;
+	border:none;
+	float:left;
+	clear:both!important;
+}
+span.catItemImage {
+	overflow:hidden;
+	display:block;
+	clear:both;
+	margin:0 auto;
+}
+/* if you need border around image only this is where you should add it */
+span.catItemImage a {
+	display:block;
+	overflow:hidden;
+	border:none;
+	text-align:center;
+	height:240px!important;
+}
+span.catItemImage img {
+	border:none;
+	padding:0;
+	overflow:hidden;
+	margin:0 auto;
+}
+div.catItemIntroText{
+	float:left!important;
+	padding:0;
+	clear:both;
+	width:100%;
+}
+div.catItemReadMore{
+	padding:0 0 0 20px;
+	float:right;
+	height:42px;
+	font-size:120%;
+	line-height:42px;
+	text-align:center;
+}
+div.catItemReadMore span{
+	padding:0 20px 0 0px;
+	display:block;
+	height:42px!important;
+	line-height:42px;	
+}
+/* catItemLinks*/
+div.catItemLinks {
+	margin:0 0 5px 0!important;
+	padding:0!important;
+}
+div.catItemCategory {
+	border-bottom:1px solid #e4e4e4;
+}
+/*tags*/
+div.catItemTagsBlock {
+	border-bottom:1px solid #e4e4e4;
+}
+div.catItemTagsBlock span {
+}
+ul.catItemTags li {
+	background-image:none;
+	background:#eee;
+	border:1px solid #e4e4e4;
+	margin:0 5px 0 0!important;
+	padding:0 5px!important;
+}
+ul.catItemTags li a {
+}
+/* secondary items are same as primary. if you would like to change them just copy
+class name above and add div#itemListSecondary before the class name and space it
+like example below */
+/*div#itemListSecondary h3.catItemTitle{
+	font-size:30px;
+}*/
+/* cat list item listlinks*/
+#itemListLinks {
+	background:none!important;
+	border:none!important;
+}
+#itemListLinks div.catItemImageBlock {
+	float:left;
+	padding:5px!important;
+}
+/*----------------------------------------------------------------------
+Item view html/com_k2/default/item.php
+----------------------------------------------------------------------*/
+#k2Container.itemView{
+}
+.itemView {
+	padding:10px 20px 10px 10px!important
+}
+div.itemHeader{
+	display:block;
+	overflow:hidden;
+	border-bottom:1px dashed #dddddd;
+}
+div.itemHeader h2.itemTitle {
+	font-weight:normal;
+	line-height:inherit;
+	clear:both;
+	margin-bottom:10px;
+}
+span.itemDateCreated {
+	clear:none!important;
+	display:block!important;
+	padding:0 10px 0 0;
+	float:left;
+	color:#aaaaaa;
+}
+/* author*/
+div.itemHeader span.itemAuthor {
+	padding:0;
+	display:block;
+	clear:none;
+	float:left;
+	font-size:90%;
+	color:#aaaaaa;
+}
+/* rating*/
+div.itemRatingBlock {
+	float:left;
+	clear:both;
+	padding-left:0px;
+	line-height:25px;
+}
+/* toolbar fot res, print etc*/
+div.itemToolbar {
+	margin:0;
+	float:right;
+	background:none;
+	border-top:none;
+	border-bottom:none;
+}
+div.itemToolbar ul {
+	float:left;
+}
+div.itemToolbar ul li {
+	font-size:90%;
+	border-right:1px dashed #dddddd;
+	border-left:none;
+}
+div.itemToolbar ul li a{
+	font-size:90%;
+}
+/* item image*/
+/* this div should have bg color or border if you need some around image styling*/
+div.itemImageBlock {
+	padding:0px!important;
+	margin:0 0 15px 0;
+	overflow:hidden;
+	display:block;
+	background:none;
+	border:none;
+	float:left;
+}
+span.itemImage {
+	overflow:hidden;
+	display:block;
+	clear:both;
+	margin:0 auto;
+}
+/* if you need border around image only this is where you should add it */
+span.itemImage a {
+	display:block;
+	overflow:hidden;
+	border:none;
+	text-align:center;
+}
+span.itemImage img {
+	border:none;
+	padding:0;
+	overflow:hidden;
+	margin:0 auto;
+}
+/* item text*/
+div.itemIntroText {
+	font-weight:normal;
+	font-size:100%;
+}
+div.itemFullText {
+	padding:0!important;
+	margin:0!important;
+	float:left!important;
+}
+div.itemFullText p {
+	padding:0!important;
+	margin:0!important;
+}
+.itemContentFooter{
+	border-top:1px dashed #dddddd!important;
+}
+/* ItemLinks*/
+div.itemLinks {
+	margin:0 0 5px 0!important;
+	padding:0!important;
+}
+/* item category*/
+div.itemCategory {
+	border-bottom:1px dashed #dddddd;
+}
+div.itemCategory span{
+	font-size:90%;
+	color:#aaaaaa;
+	font-weight:normal;
+}
+/* item tags*/
+div.itemTagsBlock {
+	border-bottom:1px dashed #dddddd;
+}
+div.itemTagsBlock span {
+	font-size:90%;
+	color:#aaaaaa;
+	font-weight:normal;
+}
+ul.itemTags li {
+	background-image:none;
+	background:#eee;
+	border:1px solid #e4e4e4;
+	margin:0 5px 0 0!important;
+	padding:0 5px!important;
+}
+ul.ItemTags li a {
+}
+span.itemDateModified {
+	font-size:90%;
+}
+span.itemHits {
+	font-size:90%;
+}
+/* item author*/
+div.itemAuthorBlock {
+	border-radius:2px;
+	background:#F5F5F5;
+	border:none;
+	margin:15px 0 0 0;
+}
+h3.itemAuthorName{
+	margin:0 0 10px 0;
+	font-size:150%;
+}
+span.itemAuthorUrl{
+	float:right;
+}
+/* latest from user */
+.itemAuthorLatest h3{
+	padding:10px;
+	margin:0!important;
+	font-size:150%	
+}
+.itemAuthorLatest ul {
+	margin:0 10px;
+}
+.itemAuthorLatest ul li{
+	border-bottom:1px dashed #dddddd!important;
+}
+/* item related*/
+div.itemRelated {
+}
+.itemRelated h3{
+	padding:10px;
+	margin:0!important;
+	font-size:150%	
+}
+div.itemRelated li {
+	padding:10px 0;
+	background:none!important;
+	width:100%!important;
+	border:none!important;
+}
+div.itemRelated li img {
+	float:left;
+	border:none;
+	margin-right:10px;
+}
+a.itemRelTitle{
+	font-size:130%;
+}
+/* item navigation*/
+div.itemNavigation {
+	background:none;
+	border-top:1px dashed #dddddd;
+	border-bottom:1px dashed #dddddd;
+}
+/* item comments */
+div.itemComments {
+	background:#F5F5F5;
+	border:none;
+}
+h3.itemCommentsCounter{
+	font-size:150%;
+	margin:0 0 10px 0;
+}
+span.commentDate,span.commentAuthorName{
+	font-weight:normal!important;
+	font-size:100%!important;
+}
+ul.itemCommentsList li{
+	border-bottom:1px dashed #dddddd!important;
+}
+.itemCommentsPagination{
+	margin-bottom:10px!important;
+}
+ul.itemCommentsList li img{
+	border:none!important;
+	margin-right:10px!important;
+}
+div.itemCommentsForm p.itemCommentsFormNotes {
+	border-top:1px solid #e4e4e4;
+}
+.itemCommentsForm h3{
+	font-size:150%;
+}
+.itemCommentsForm p.itemCommentsFormNotes{
+	padding:5px 0;
+	border-top:1px dashed #dddddd!important;
+}
+form#comment-form .inputbox {
+	font-size:100%;
+	border:1px solid #e4e4e4!important;
+	width:100%!important;
+	text-indent:10px;
+	padding:8px 0px!important;
+}
+form#comment-form input[type="text"] {
+}
+#submitCommentButton {
+	border:none!important;
+	width:150px;
+	height:42px;
+	font-size:130%!important;
+	cursor:pointer;
+	margin:20px 0!important;
+}
+/*----------------------------------------------------------------------
+k2 user items view    html/com_k2/default/user.php
+user page is using same style for items and itembody contents as item view page. 
+if you wish to edit the styles just add class .userView before the class 
+you need to change example: .userView .itemTitle{font-size:30px;}
+----------------------------------------------------------------------*/
+.userView{
+	margin:0 10px 0 0;
+}
+.userView div.itemView {
+	margin:0;
+	border-bottom:1px dashed #dddddd;
+}
+.userView .itemHeader{
+	border:none;
+}
+div.userBlock {
+	background:#F5F5F5;
+	border:none;
+	margin:10px 3px 0 0px;
+}
+div.userBlock h2 {
+	margin:0;
+	border-bottom:none;
+}
+div.userBlock span.userURL{
+	float:right;
+	font-size:90%;
+}
+p.userAdditionalInfo {
+	border:none!important;
+}
+.userView span.itemDateCreated {
+	padding:0;
+}
+.userView .itemImageBlock{
+	margin:0 10px 0 0;
+}
+.userView .itemIntroText{
+	padding:0;
+}
+.userView .itemIntroText p{
+	margin:0;
+}
+.userView h3.itemTitle {
+	font-size:180%;
+	margin:0;
+}
+.userView .itemReadMore{
+	margin:0 10px;
+	padding:0 0 0 20px;
+	float:right;
+	height:42px;
+	font-size:120%;
+	line-height:42px;
+	text-align:center;
+}
+.userView .itemReadMore span{
+	padding:0 20px 0 0px;
+	display:block;
+	height:42px!important;
+	line-height:42px;	
+}
+.userView div.curtain{
+	height:139px;
+}
+.userView div.curtain a.mainimg{
+	background:url(../images/hover_bg_small.jpg) no-repeat center center;
+}
+/*----------------------------------------------------------------------
+k2 tagitem view    html/com_k2/templates/tag.php
+user tag is using same style for items and itembody contents as item view page. 
+if you wish to edit the styles just add class .tagView before the class 
+you need to change example: .tagView .itemTitle{font-size:30px;}
+----------------------------------------------------------------------*/
+.tagView{
+	margin:0 10px;
+}
+.tagView .itemView{
+	margin:0;
+	border-bottom:1px dashed #dddddd;
+}
+.tagView .itemHeader{
+	border:0!important;
+	padding:5px 0;
+}
+.tagView .itemBody{
+	padding:15px 0 5px 0;
+}
+.tagView .itemImageBlock{
+	margin:0 10px 0 0!important;
+}
+.tagView div.curtain a.mainimg{
+	background:url(../images/hover_bg_small.jpg) no-repeat center center;
+}
+.tagView .itemIntroText{
+	padding:0;
+}
+.tagView .itemIntroText p{
+	margin:0;
+}
+.tagView .itemCategory{
+	border:none;
+	float:left;
+}
+.tagView .itemReadMore{
+	float:right;
+}
+.tagView .itemReadMore{
+	margin:0 10px;
+	padding:0 0 0 20px;
+	float:right;
+	height:42px;
+	font-size:120%;
+	line-height:42px;
+	text-align:center;
+}
+.tagView .itemReadMore span{
+	padding:0 20px 0 0px;
+	display:block;
+	height:42px!important;
+	line-height:42px;	
+}
+.tagView span.itemDateCreated {
+	padding:0;
+}
+.tagView h2.itemTitle {
+	margin-bottom:0!important;
+	font-size:180%!important;
+}
+.tagView div.curtain{
+	height:138px;
+}
+.tagView div.curtain a.mainimg{
+	background:url(../images/hover_bg_small.jpg) no-repeat center center;
+}
+/*----------------------------------------------------------------------
+k2 generic view    html/com_k2/templates/generic.php
+user generic is using same style for items and itembody contents as item view page. 
+if you wish to edit the styles just add class .genericView before the class 
+you need to change example: .genericView .itemTitle{font-size:30px;}
+----------------------------------------------------------------------*/
+.genericView span.itemDateCreated {
+	padding:0;
+}
+.genericView h2.itemTitle {
+	font-size:180%!important;
+}
+/*----------------------------------------------------------------------
+Latest Item list html/com_k2/default/latest.php
+----------------------------------------------------------------------*/
+.latestItemsCategory {
+	background:#eee!important;
+	margin:4px 5px!important;
+	padding:10px!important;
+	border:none!important;
+}
+div.latestItemsCategoryImage img {
+	background:none!important;
+	padding:0px!important;
+	border:1px solid #e4e4e4!important;
+	margin:0 auto!important;
+}
+/*----------------------------------------------------------------------
+Latest Item html/com_k2/default/latest_item.php
+----------------------------------------------------------------------*/
+.latestView{
+	margin:0 10px 0 0;
+}
+div.latestItemList .catItemDateCreated {
+	float:left;
+	font-size:80%;
+}
+.latestItemList{
+	padding:0!important;
+}
+.latestItemView {
+	border-bottom:1px dashed #dddddd;
+	padding:10px 5px;
+}
+.latestItemView .catItemImageBlock span.catItemImage a{
+	height:auto!important
+}
+.latestItemView .catItemHeader{
+	padding:0 5px;
+}
+.latestItemView h2.catItemTitle{
+	margin:0;
+}
+.latestItemView .catItemBody{
+	padding:10px 5px 0 5px;
+}
+.latestItemView .catItemImageBlock{
+	margin:0 10px 0 0;
+	float:left;
+}
+.latestItemView .catItemIntroText{
+	float:none!important;
+	clear:none!important;
+	line-height:23px;
+}
+.latestItemView .catItemIntroText p{
+	margin:0;
+}
+.latestItemView .catItemReadMore{
+	margin:0 10px;
+}
+.latestItemView div.curtain{
+	height:138px;
+	float:left;
+}
+.latestItemView div.curtain a.mainimg{
+	background:url(../images/hover_bg_small.jpg) no-repeat center center;
+}
+/*----------------------------------------------------------------------
+Latest Item html/com_k2/default/old_socials.php
+----------------------------------------------------------------------*/
+div.pre25SocialLinks{
+	display:block;
+	overflow:hidden;
+	width:100%;
+	padding:0 0 3px 3px;
+	margin:0;
+	line-height:20px;
+	border-bottom:1px dashed #dddddd;
+}
+span.preSocialsTitle{
+	display:block;
+	font-weight:bold;
+	margin:0 10px 0 0;
+}
+ul.preSocialLinks{
+	margin:0!important;
+	padding:0!important;
+	float:left;
+}
+ul.preSocialLinks li{
+	background:none;
+	float:left;
+	display:inline;
+	margin:0!important;
+	padding:0!important;
+}
+ul.preSocialLinks li a{
+	height:20px;
+	width:20px;
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px;
+	margin:0 8px 0 0;
+	padding:0!important;
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+ul.preSocialLinks li span{
+	font-weight:normal;
+	color:#aaaaaa;
+	font-size:90%;
+}
+ul.preSocialLinks li a.googlebuzz{
+	background-position:0 top;
+}
+ul.preSocialLinks li a.googlebuzz:hover{
+	background-position:0 bottom;
+}
+ul.preSocialLinks li a.facebook{
+	background-position:-20px top;
+}
+ul.preSocialLinks li a.facebook:hover{
+	background-position:-20px bottom;
+}
+ul.preSocialLinks li a.delicious{
+	background-position:-40px top;
+}
+ul.preSocialLinks li a.delicious:hover{
+	background-position:-40px bottom;
+}
+ul.preSocialLinks li a.digg{
+	background-position:-60px top;
+}
+ul.preSocialLinks li a.digg:hover{
+	background-position:-60px bottom;
+}
+ul.preSocialLinks li a.stumble{
+	background-position:-80px top;
+}
+ul.preSocialLinks li a.stumble:hover{
+	background-position:-80px bottom;
+}
+ul.preSocialLinks li a.technorati{
+	background-position:-100px top;
+}
+ul.preSocialLinks li a.technorati:hover{
+	background-position:-100px bottom;
+}
+ul.preSocialLinks li a.reddit{
+	background-position:-120px top;
+}
+ul.preSocialLinks li a.reddit:hover{
+	background-position:-120px bottom;
+}
+ul.preSocialLinks li a.myspace{
+	background-position:-140px top;
+}
+ul.preSocialLinks li a.myspace:hover{
+	background-position:-140px bottom;
+}
+ul.preSocialLinks li a.twitter{
+	background-position:-160px top;
+}
+ul.preSocialLinks li a.twitter:hover{
+	background-position:-160px bottom;
+}
+/*----------------------------------------------------------------------
+Category view html/com_k2/register.php
+----------------------------------------------------------------------*/
+#k2UserPages{
+	background:#eee;
+	display:block;
+	overflow:hidden;
+	margin:20px 10px;
+	padding:10px;
+	border:1px solid #e4e4e4;
+
+}
+#k2UserPages th,
+#k2UserPages td{
+	background:#eee!important;text-align:left!important;
+}
+#k2UserPages td{
+	padding-right:10px!important;
+}
+#k2UserPages .componentheading{
+	margin:10px 0;
+}
+#k2UserPages input{
+	padding:10px;
+	text-indent:4px;
+	text-align:left;
+	margin:10px 0 0 10px;
+	border:1px solid #e4e4e4!important;
+	background:#fff;
+}
+
+#k2UserPages span.input_file_wrapper {
+	background:url(../images/k2images/browsek2.gif) top left no-repeat;
+	border:none;
+	height:30px;
+	display:block!important;
+	position:relative!important;
+	width:220px;
+	overflow:hidden;
+	text-align:right!important;
+	margin:0 0 0 10px!important;
+	float:left;
+	cursor:pointer;
+	clear:both;
+}
+#k2UserPages span.input_file_wrapper input.fake-text {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	height:30px;
+	line-height:30px;
+	padding:0 0 0 3px!important;
+	margin:0px!important;
+	width:153px;
+	background:none!important;
+	border:none!important;
+	font-size:10px!important;
+	font-weight:bold;
+}
+
+/*----------------------------------------------------------------------
+k2 content module
+----------------------------------------------------------------------*/
+.k2ItemsBlock {
+	padding:0;
+	font-size:80%;
+}
+.k2ItemsBlock li.even, .k2ItemsBlock li.odd {
+	padding:20px 0 10px 0;
+	background:none;
+	border-bottom:1px dashed #dddddd;
+}
+.k2ItemsBlock li.lastItem {
+	border:none;
+}
+a.moduleItemTitle, a.moduleItemTitle:visited {
+	font-size:160%;
+	display:block;
+	margin:0!important;
+}
+.moduleItemImage {
+	float:left;
+	border:none;
+}
+a.moduleItemImage {
+	margin:0 15px 0 0;
+}
+a.moduleItemImage img {
+	border:none!important;
+	margin:0px 0 0!important;
+	padding:0;
+	float:left!important;
+}
+.moduleItemIntrotext {
+	font-size:110%;
+	line-height:18px!important;
+}
+a.moduleItemReadMore{
+	margin:5px 0;
+	float:right;
+	font-size:120%;
+}
+.moduleItemTags {
+	margin:10px 0;
+	border-bottom:1px solid #e4e4e4;
+	font-size:110%;
+}
+/*----------------------------------------------------------------------
+k2 calendar module
+----------------------------------------------------------------------*/
+div.k2CalendarBlock {
+	height:230px;
+}
+table.calendar {
+	width:100%;
+	font-family: Cambria, serif;
+}
+table.calendar tr td.calendarCurrentMonth, table.calendar tr td.calendarNavMonthPrev, table.calendar tr td.calendarNavMonthNext {
+	background:none;
+	text-transform:uppercase;
+	font-weight:normal;
+}
+table.calendar tr td.calendarDayName {
+	background:#f0f0f0;
+}
+table.calendar tr td {
+	padding:0px!important;
+	margin:0!important;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:11px;
+}
+table.calendar tr td.calendarDateLinked {
+	padding:0px!important;
+	margin:0!important;
+	border-collapse:collapse;
+}
+table.calendar tr td.calendarDate, table.calendar tr td a, table.calendar tr td a:hover, table.calendar tr td.calendarNavMonthPrev, table.calendar tr td.calendarCurrentMonth, table.calendar tr td.calendarNavMonthNext {
+	padding:5px!important;
+}
+table.calendar tr td.calendarNavMonthPrev a, table.calendar tr td.calendarNavMonthNext a {
+	font-size:100%!important;
+}
+table.calendar tr td.calendarToday, table.calendar tr td.calendarTodayLinked {
+	background:#121212;
+	color:#fff;
+}
+table.calendar tr td.calendarDateLinked a{
+	background:#f0f0f0;
+	color:#121212;
+}
+table.calendar tr td.calendarTodayLinked a:hover, table.calendar tr td.calendarDateLinked a:hover {
+	background:#5B5B5B;
+	color:#ececec;
+}
+table.calendar tr td.calendarDateEmpty {
+	background:#fff;
+}
+/*----------------------------------------------------------------------
+k2 cats menu
+----------------------------------------------------------------------*/
+.k2CategoriesListBlock ul, .k2CategoriesListBlock ul.level0, .k2CategoriesListBlock ul.level1 {
+	list-style:none;
+	margin:0;
+	padding:0 0 0 5px;
+}
+.k2CategoriesListBlock ul li, .k2CategoriesListBlock ul li:hover {
+	list-style-type:none;
+	background-image:none;
+	padding:0;
+	text-align:left;
+}
+.k2CategoriesListBlock ul li a {
+	height:26px;
+	line-height:20px;
+	text-decoration:none;
+	display:block;
+	font-size:11px;
+	text-decoration:none;
+	text-indent:22px;
+	padding-top:5px;
+}
+/*----------------------------------------------------------------------
+k2 tag cloud module
+----------------------------------------------------------------------*/
+div.k2TagCloudBlock a{
+	padding:10px;
+	color:#424242;
+}
+div.k2TagCloudBlock a:hover {
+	background:#424242;
+	color:#989898;
+	padding:10px;
+}
+/*----------------------------------------------------------------------
+k2 comments module
+----------------------------------------------------------------------*/
+div.k2LatestCommentsBlock {
+	padding:0;
+	margin:0;
+	font-size:80%;
+}
+.k2LatestCommentsBlock li.even, 
+.k2LatestCommentsBlock li.odd {
+	padding:10px 0;
+	background:none;
+	border-bottom:1px dashed #dddddd;
+}
+.k2LatestCommentsBlock li.lastItem {
+	border-bottom:none;
+}
+div.k2LatestCommentsBlock ul li span.lcComment {
+	clear:right;
+	font-size:130%;
+	display:block;
+}
+div.k2LatestCommentsBlock ul li img{
+	margin-right:10px;
+}
+.lcUsername,.lcCommentDate{
+	font-size:110%;
+}
+.lcItemTitle{
+	float:right;
+}
+/*----------------------------------------------------------------------
+k2 CAT MENU COLOR AND BG CSS
+----------------------------------------------------------------------*/
+/* LINK BG IMAGE */
+.k2CategoriesListBlock ul li a:hover {
+	background-position:left top;
+}
+/* main caregory link*/
+div.k2CategoriesListBlock ul li.activeCategory a {
+	color:#9e9e9e!important;
+	background-position:left bottom;
+}
+div.k2CategoriesListBlock ul li.activeCategory a:hover {
+	color:#b2b2b2!important;
+}
+/* sub category links*/
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 li a {
+	color:#9e9e9e!important;
+}
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 li a:hover {
+	color:#b2b2b2!important;
+}
+
+/********JS*********/
+div.curtain,div.curtainImage,div.cRight,div.cLeft{
+ height:240px;
+}
+div.curtain{
+ position:relative;
+ margin:0;
+ overflow:hidden;
+ display:block;
+}
+div.cLeft, div.cRight{
+ width:50%;
+ overflow:hidden;
+ position:absolute;
+ left:0;
+ overflow:hidden;
+ display:block;
+ top:0px;
+}
+div.cRight{
+ left:auto;
+ right:0;
+ 
+}
+div.curtain .rightimg{
+ position:absolute;
+ right:0;
+}
+div.curtainImage{
+ position:relative;
+ display:block;
+}
+div.curtain a.mainimg{
+ display:block;
+ margin:0;
+ padding:0;
+ overflow:hidden;
+ background:url(../images/hover_bg.jpg) no-repeat center top;
+}
+div.curtain img.fadeimg{
+ margin:0;
+ padding:0;
+ border:none;
+}

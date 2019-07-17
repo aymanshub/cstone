@@ -1,0 +1,736 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimplegrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*BODY ID'S USED FOR CSS FONT STYLES AND BASE SITE BODY STYLING */
+body#stylef1, body#stylef2, body#stylef3, body#stylef4, body#stylef5, body#stylef6, body#stylef7, body#stylef8, body#stylef9, body#stylef10, body#stylef11, body#stylef12, body#stylef13, body#stylef14, body#stylef15, body#stylef16 {
+	background:url(../images/main_bg.jpg) repeat;
+	color:#454545;
+}
+/* BOTTOM PART OF THE SITE LAYOUT. BASE WRAP */
+#centerbottom {}
+#centertop{
+	background:#fff;
+}
+/*GRIDS STYLING CAN BE USED TO STYLE EACH gray DIFFERENTLY */
+#yjsg1 {}
+#header {}
+#logo {
+	background:url(../images/gray/logo.png) no-repeat 0px 0px;
+}
+#yjsgheadergrid {}
+#yjsg2 {}
+#yjsg3 {}
+#yjsg4 {}
+#yjsg5 {}
+#pathway {
+	background:#f5f5f5;
+	color:#989898;
+}
+#pathway .yjsg_breadcrumbs a.pathway {
+	background: url(../images/arrow.png) no-repeat right center;
+}
+#yjsg6 {}
+#yjsg7 {}
+#footer {
+	color:#424242;
+}
+#joomlacredit {
+	color:#424242;
+}
+/*TEMPLATE CSS 
+--------------------- */
+/* SITE LINKS */
+a:link, a:visited {
+	text-decoration: none;
+	color:#424242;
+}
+/* SITE HOVERS */
+a:focus, a:hover {
+	color:#989898;
+	text-decoration: none;
+}
+/*DIFFERENT STYLE FOR  LINKS ON DARK BG
+--------------------- */
+#footmod a, #footmod a:visited, #cp a, #cp a:visited, #joomlacredit a, #joomlacredit a:visited, #pathway a, #pathway a:visited {
+	color:#424242;
+}
+#footmod a:hover, #footmod a:focus, #cp a:focus, #cp a:hover, #joomlacredit a:focus, #joomlacredit a:hover, #pathway a:focus, #pathway a:hover {
+	color:#989898;
+}
+/* SITE HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+	color:#424242;
+}
+.small, .createdate, .modifydate, .createby {
+	text-transform: uppercase;
+	color:#989898;
+	font-size:10px;
+}
+/* SITE TITLE, NEWS ITEM TITLE, MORE ARTICLES */
+.pagetitle, div.title h1, div.title h2, .yjsg-morearticles h3 {
+	color:#424242;
+}
+.yjsg-morearticles h3 {
+	border:none;
+}
+/* NEWS ITEM TITLE WITH LINK*/
+div.title h1 a:link, div.title h1 a:visited, div.title h2 a:link, div.title h2 a:visited {
+	color:#424242;
+}
+div.title h1 a:hover, div.title h1 a:focus, div.title h2 a:hover, div.title h2 a:focus {
+	color:#989898;
+}
+/* FORM ELEMENTS */
+/* ARTICLE TABLE OF CONTENTS */
+fieldset, .toclink {
+	border:1px solid #dcdcdc;
+}
+/* FIELDSET IN MODULES */
+.yjsquare_in fieldset, .yjround_in fieldset {
+	border:none;
+}
+/* INPUTBOXES */
+.inputbox,.inputbox_email{
+	color:#aaaaaa;
+	background: #FFFFFF;
+	border:2px solid #efefef;
+}
+.inputbox:hover, .inputbox:focus,
+.inputbox_email:hover,.inputbox_email:focus{
+	color:#aaaaaa;
+	background: #f8f8f8;
+	border:2px solid #efefef;
+}
+/*BUTTONS
+--------------------- */
+.button, .validate{
+	background:url(../images/gray/yousold_button.png) no-repeat left top;
+	border:none;
+	color:#fff;
+	text-shadow:1px 1px #323232;
+}
+/*readon*/
+a.readon:link, a.readon:visited {
+	background:url(../images/gray/readon_l.png) no-repeat left top;
+	border:none;
+	color:#fff;
+}
+.readon span {
+	background:url(../images/gray/readon_r.png) no-repeat right top;
+}
+a.readon:hover {
+	color:#989898;
+}
+ul.pagination li a, ul.pagination li span, 
+th.pagenav_prev a, th.pagenav_next a,
+div.back_button a,li.pagenav-next a,li.pagenav-prev a {
+	background-image: url(../images/gray/pagination.png);
+}
+/* active one*/
+ul.pagination li span {
+	color:#fff;
+}
+/* hover*/
+ul.pagination li a:hover {
+	color:#fff;
+}
+/* THIS TEMPLATE IS EQUIPED WITH  ROUND AND SQUARE CORNERS
+TO SEE ROUND CORNERS SIMPLY CHANGE THE MODULE gray STYLE IN TEMPLATE MANAGER
+UNDER ACCORDION ADVANCED OPTIONS. SEE ALSO rounded.css FILE".
+
+/* ROUND MODULES STYLING
+--------------------- */
+/* ROUND IMAGE. YOU CAN CHANGE TO YOUR OWN. 1 IMAGE TECHNIQUE USED */
+.yjround .content, .yjround .t, .yjround .b, .yjround .b div {
+	background:url(../images/gray/rounded.png);
+}
+.yjround h4 {
+	color:#424242;
+}
+/* TITLE SPANS FOR SECOND PART OF THE TITLE COLOR */
+.yjround h4 span {
+	color:#424242;
+}
+.yjround_in {
+}
+/*SQUARE MODULES STYLE
+--------------------- */
+.yjsquare h4 {
+	color:#424242;
+}
+/* SPAN COLOR SHOWS FIRST */
+.yjsquare h4 span {
+	color:#424242;
+}
+.yjsquare {
+}
+.yjsquare_in {
+}
+/* ADDITIONAL MODULE STYLES */
+/* _yj1 */
+.yjsquare_yj1 h4 {
+}
+.yjsquare_yj1 h4 span {
+}
+.yjsquare_yj1 {
+}
+.yjsquare_yj1 .yjsquare_in {
+}
+/* _yj2 */
+.yjsquare_yj2 h4 {
+}
+.yjsquare_yj2 h4 span {
+}
+.yjsquare_yj2 {
+}
+.yjsquare_yj2 .yjsquare_in {
+}
+/*SEARCH INPUTBOX STYLING. CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+.search {
+}
+.search .inputbox {
+}
+/*LOGIN MODULE INPUTBOX CURRENTLY USING DEFAULT INPUT STYLE
+--------------------- */
+#modlgn_passwd, #modlgn_username {
+}
+#modlgn_passwd {
+}
+#modlgn_username {
+}
+#modlgn_remember.inputbox{
+}
+/*TOP MENU STYLE FOR SPLIT MENU, CSS DROPDOWN AND SMOOTH DROPDOWN
+--------------------- */
+.horiznav {
+	background: url(../images/gray/topmenu/horiz_bg.png) repeat-x 0 bottom;
+}
+/* MENU OVERRIDES */
+.YJSG_listContainer {
+	background:none;
+}
+/* NORMAL SUBTITLE */
+.horiznav ul li a span.yjm_desc {
+	color:#959595;
+}
+/*ACTIVE AND HOVER SUBTITLE*/
+.horiznav ul li.active a span.yjm_desc, .horiznav ul li a:hover span.yjm_desc, .horiznav ul li.sfHover a span.yjm_desc {
+	color:#959595;
+}
+/* NORMAL TOP LINKS */
+.horiznav ul li {
+	background: url(../images/gray/topmenu/normal_l.png) no-repeat left center;
+}
+.horiznav ul li a, .horiznav ul li a:visited {
+	color: #989898;
+	background: url(../images/gray/topmenu/normal_r.png) no-repeat right center;
+}
+/* NORMAL TOP LINKS WITH CHILD ELEMENT */
+.horiznav ul li.haschild {
+	background: url(../images/gray/topmenu/normal_l_haschild.png) no-repeat left center;
+}
+/* TOP LINKS HOVER */
+.horiznav ul li:hover, .horiznav ul li.sfHover {
+	background: url(../images/gray/topmenu/hover_l.png) no-repeat left center;
+}
+.horiznav ul li a:hover, .horiznav ul li:hover a, .horiznav ul li.sfHover a,  .horiznav ul li.sfHoverHas a {
+	color: #fff;
+	background: url(../images/gray/topmenu/hover_r.png) no-repeat right center;
+}
+/* TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav ul li.haschild:hover {
+	background: url(../images/gray/topmenu/hover_l_haschild.png) no-repeat left center;
+}
+.horiznav ul li.haschild a:hover {
+	color: #fff;
+}
+/* ACTIVE TOP LINKS  */
+.horiznav li#current, .horiznav li.active {
+	background: url(../images/gray/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a, .horiznav li.active a, .horiznav li.active a:visited, .horiznav li.active.sfHover a:visited, .horiznav li.active.sfHoverHas a:visited {
+	color: #fff;
+	background: url(../images/gray/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS WITH CHILD ELEMENT */
+.horiznav li#current.haschild, .horiznav li.haschild, .horiznav ul li.haschild.active, .horiznav ul li.sfHoverHas {
+	background: url(../images/gray/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* ACTIVE TOP LINKS HOVER */
+.horiznav li#current:hover, .horiznav li#current.sfHover, .horiznav li.active:hover, .horiznav li.active.sfHover {
+	background: url(../images/gray/topmenu/active_l.png) no-repeat left center;
+}
+.horiznav li#current a:hover, .horiznav li#current.sfHover a:hover, .horiznav li.active a:hover {
+	color: #e8e8e8;
+	background: url(../images/gray/topmenu/active_r.png) no-repeat right center;
+}
+/* ACTIVE TOP LINKS HOVER WITH CHILD ELEMENT */
+.horiznav li#current.haschild:hover, .horiznav li#current.haschild.sfHoverHas, .horiznav li#current.active.sfHover {
+	background: url(../images/gray/topmenu/active_l_haschild.png) no-repeat left center;
+}
+/* MAIN SUB UL AND MODULE BG */
+ul.subul_main.group_holder, .subul_main li.has_modpoz div.yj_menu_module_holder, .subul_main li.has_module div.yj_menu_module_holder, .subul_main li.haschild div.yj_menu_module_holder, .horiznav ul ul.subul_main.dropline {
+	background:#555555;
+}
+/* end drpline extra */
+.horiznav ul ul.subul_main.dropline ul a, .horiznav ul ul.subul_main.dropline ul a:hover, ul.subul_main.dropline div.yj_menu_module_holder {
+	border-bottom: 1px solid #7d7d7d!important;
+}
+/*--- end dropline extra ---*/
+
+/*---menu module---*/
+div.yj_menu_module_holder{
+	color:#fff;
+}
+div.yj_menu_module_holder h4,
+div.yj_menu_module_holder h4 span{
+	color:#fff!important;
+}
+div.yj_menu_module_holder h4{
+	border-bottom:none!important;
+}
+/* MAIN SUB ITEM*/
+.top_menu ul.subul_main li a {
+	background:#555555;
+	border-bottom: 1px solid #7d7d7d;
+	color: #fff;
+}
+.top_menu ul.subul_main li a:visited {
+	color: #fff;
+	background:#555555;
+}
+/*MAIN SUB ITEM HOVER*/
+.top_menu ul.subul_main li a:hover {
+	background:#424242;
+	color: #fff;
+}
+.top_menu ul.subul_main li, .top_menu ul.subul_main li.active, .top_menu ul.subul_main li.active:visited, .top_menu ul.subul_main li.active:hover, .top_menu ul.subul_main li:hover, .top_menu ul.subul_main li:visited, .top_menu ul.subul_main li#current, .top_menu ul.subul_main li#current:hover {
+	border:none;
+	background:none;
+}
+/*MAIN SUB ACTIVE UL A ITEMS*/
+.top_menu li#current ul.subul_main li a, .top_menu li.active ul.subul_main li a {
+	background:#555555;
+	color: #fff;
+}
+/*MAIN SUB ACTIVE UL ITEMS A HOVER*/
+.top_menu li#current ul.subul_main li a:hover, .top_menu li.active ul.subul_main li a:hover, .top_menu li#current.sfHover ul.subul_main li a:hover, .top_menu li.active.sfHover ul.subul_main li a:hover {
+	background:#424242;
+	color: #fff;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM*/
+.top_menu ul.subul_main li#current a,
+.top_menu ul.subul_main li.haschild.active span.subparent a{
+	background:#424242;
+	color: #fff;
+}
+/*MAIN SUB UL ACTIVE LI A ITEM HOVER*/
+.top_menu ul.subul_main li#current a:hover, .top_menu ul.subul_main li#current.sfHover,
+.top_menu ul.subul_main li.haschild.active span.subparent a:hover{
+	background:#424242;
+	color: #e8e8e8;
+}
+/*SUB LEVEL PARENT ITEM ARROWS*/
+ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a {
+	background-image:url(../images/gray/topmenu/arrow_right.png)!important;
+	background-repeat:no-repeat!important;
+	background-position:95% 50%!important;
+}
+ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover, ul.subul_main ul.subul_main ul.subul_main ul.subul_main li.haschild span.child a:hover {
+	background-image:url(../images/gray/topmenu/arrow_down.png)!important;
+	background-repeat:no-repeat!important;
+	background-position:95% 50%!important;
+}
+/* IE6 SPECIFIC */
+.horiznav li li.sfHover ul, .horiznav li li.sfHoverHas ul, .top_menu ul.subul_main.isie {
+	background:#292929;
+}
+/********************** CORNERS FOR MENU UL'S ***************************/
+/*TOP LEFT*/
+.horiznav li.tl, .horiznav li.tl:hover {
+	background:transparent url(../images/gray/topmenu/corners/tl.png)!important;
+}
+/* TOP RIGHT*/
+.horiznav li.tr, .horiznav li.tr:hover {
+	background:transparent url(../images/gray/topmenu/corners/tr.png) no-repeat right top!important;
+}
+/* BOTTOM RIGHT*/
+.horiznav li.br, .horiznav li.br:hover {
+	background:transparent url(../images/gray/topmenu/corners/br.png) no-repeat right bottom!important;
+}
+/* BOTTOM LEFT*/
+.horiznav li.bl, .horiznav li.bl:hover {
+	background:transparent url(../images/gray/topmenu/corners/bl.png) no-repeat left bottom!important;
+}
+/* RIGHT MIDDLE */
+.horiznav li.right, .horiznav li.right:hover {
+	background:transparent url(../images/gray/topmenu/corners/right.png) no-repeat right bottom!important;
+}
+/********************** YJSG MEGA MENU STYLE ***************************/
+/* Group holder title*/
+.top_menu .horiznav .group_holder li.haschild a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a {
+	color: #fff;
+	border:none;
+	background:none;
+}
+.top_menu .horiznav .group_holder li.haschild a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild a:hover {
+	color: #fff;
+	background:none;
+}
+/* Group holder items title*/
+.top_menu .horiznav .group_holder li.haschild li a, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a {
+	color: #fff;
+	border-bottom: 1px solid #7d7d7d;
+	background:#555555;
+}
+.top_menu .horiznav .group_holder li.haschild li a:hover, .top_menu .horiznav .group_holder li.haschild .group_holder li.haschild li a:hover {
+	color: #fff;
+	background:#424242;
+}
+span.separator {
+	background:#555555;
+	border-bottom: 1px solid #7d7d7d;
+	color: #fff;
+}
+/*Menu module links*/
+div.yj_menu_module_holder .yjsquare_in a:link, div.yj_menu_module_holder .yjsquare_in a:visited {
+	color:#fff!important;
+}
+div.yj_menu_module_holder .yjsquare_in a:focus, div.yj_menu_module_holder .yjsquare_in a:hover {
+	color:#989898!important;
+}
+/*SIDE MENU MODULE
+--------------------- */
+/* MENU NORMAL LINKS COLOR */
+#mainlevel li a, .menu li a, a.mainlevel {
+	background: url(../images/gray/mainlevel.gif) no-repeat left top;/* LINKS BG IMAGE */
+	color:#989898;
+}
+/* HOVER AND ACTIVE LINKS BG IMAGE */
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel:hover, a.mainlevel#active_menu, #mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, .menu li a:hover, .menu li.active a {
+	background: url(../images/gray/mainlevel.gif) no-repeat left bottom;
+}
+/* SUB LEVELS LI IMAGE */
+a.sublevel {
+	background: url(../images/gray/bodyli.gif) no-repeat 5px 9px;
+}
+a.sublevel:hover {
+	text-decoration:underline;
+}
+/*HOVER AND ACTIVE LINK COLOR */
+#mainlevel li a:hover, #mainlevel a#active_menu:link, #mainlevel a#active_menu:visited, a.mainlevel#active_menu, a.sublevel, a.sublevel:hover, a.sublevel:active, a.sublevel:focus, #active_menu, a.mainlevel:hover, a.mainlevel:active, a.mainlevel:focus, li.active a, li.parent a, .menu li a:hover {
+	color:#424242;
+}
+/* MENU LI A AND MENU SUB LEVELS LINK COLOR */
+li.active ul li a, a.sublevel#active_menu {
+	color:#424242;
+}
+/* MENU LI A HOVER AND ACTIVE LINK COLOR AND BG */
+li.active ul li a:hover, li.active ul li.active a {
+	color:#989898;
+	background: url(../images/gray/mainlevel.gif) no-repeat left top;
+}
+/* SITES LI IMAGE */
+ul li {
+	background: url(../images/gray/bodyli.gif) no-repeat 0px 5px;
+}
+/*USER PAGES STYLES */
+div.userpages{
+	background:#f5f5f5;
+	border:none;
+	text-shadow:none;
+}
+div.userpageswrap.offline div.userpages{
+	border:none;
+	background:#fff;
+}
+/*16 and up*/
+div.userpages dt{
+	background:#fff;
+	border:1px solid #ccc;
+}
+/* IMAGE CAPTIONS */
+p.img_caption {
+	background:#efefef;
+	border:1px solid #ccc;
+	text-shadow:1px 1px #fff;
+	text-transform:uppercase;
+	color:#5F5F5F;
+}
+/*SECTION TABLE ENTERY COLORS- */
+table.pollstableborder tr.sectiontableentry1 td, table.pollstableborder tr.sectiontableentry2 td {
+	border: none;
+}
+.sectiontableheader {
+	border: 1px solid #f4f4f4;
+	background:#fff;
+}
+.sectiontableentry1 {
+	background-color : #f4f4f4;
+}
+tr.sectiontableentry1 td, tr.sectiontableentry2 td, td.sectiontableentry1, td.sectiontableentry2 {
+	border-bottom: 1px solid #fff;
+}
+tr.sectiontableentry1 td, td.sectiontableentry1 {
+	background-color: #f4f4f4;
+}
+tr.sectiontableentry2 td, td.sectiontableentry2 {
+	background-color: #fff;
+}
+tr.sectiontableentry1:hover td, tr.sectiontableentry2:hover td {
+	background-color: #f9f9f9;
+}
+
+/********************\
+*******YOUSOLD********
+\********************/
+
+/***YOUSOLD SLIDER***/
+.yousold_ribbon{
+	background:url(../images/gray/ribbon.png) no-repeat left center;
+}
+/***MULTIMEDIA BOX MENU***/
+.ysmb h3{
+	color:#fff;
+}
+.ysmb .bot_thumb,.ysmb .bot_thumbv {
+    border:3px solid #555555!important;
+}
+.ysmb .bot_thumb:hover,
+.ysmb .bot_thumbv:hover{
+    border:3px solid #3c3c3c!important;
+}
+/***MODULE SAMPLA YJ1 AND YJ2***/
+.yj1,.yj2{
+	color:#ababab;
+	text-shadow:1px 1px #323232;
+	background:#424242;
+}
+.yj1 h4,.yj2 h4{
+	color:#fff!important;	
+	text-shadow:1px 1px #323232;
+}
+.yj1 h4 span,.yj2 h4 span{
+	color:#fff!important;
+}
+/***MODULE STYLE SHADOW***/
+.left_shadow,.right_shadow{
+	background:url(../images/left_shadow.png) no-repeat left top;
+}
+.right_shadow{
+	background:url(../images/right_shadow.png) no-repeat right top;
+}
+/***YJ LIVE SEARCH***/
+.yj1 #defaultfeedLiveSearch.yj_inputbox{
+	color:#414141;
+	border:1px solid #1a1a1a;
+	text-align: right;
+}
+.yj1 .button{
+	background:url(../images/yjlivesearch_button.png) no-repeat left center;
+}
+.yj1 .LiveSearchStop {
+	background:#fff url(../images/gray/yjlivesearch_icon.png) left no-repeat;
+}
+.LiveSearchLoading {
+	background:#fff url(../images/gray/yjlivesearch_loader.gif) right no-repeat;
+}
+.LiveSearchResults .LiveSearchResultHover {
+	background:#484848;
+	color:#FFFFFF;
+}
+.LiveSearchResults {
+	border:1px solid #d5d5d5;
+}
+.LiveSearchResults a.next,
+.LiveSearchResults a.back {
+	background:#484848;
+}
+.LiveSearchResults a.next:hover,
+.LiveSearchResults a.back:hover {
+	background:#484848;
+}
+.LiveSearchResults .LiveSearchExpandDetails{
+	background:url(../images/gray/yjlivesearch_info.png) no-repeat center center;
+}
+/***CUSTOM PARAGRAPH USER1***/
+#yjsg3,#yjsg4{
+	border-bottom:1px dashed #dddddd;
+}
+/***YOUYORK MODULE USER6***/
+/*navigation*/
+.yy_container .linkForward,
+.yy_container .linkBackward {
+	background:url(../images/gray/york_nav.jpg) no-repeat right top;
+}
+.yy_container .linkBackward{
+	background:url(../images/gray/york_nav.jpg) no-repeat left top;
+}
+/***YJME YORK***/
+.ysyy .item_cdate{
+	color:#ababab;
+}
+/*Hover image*/
+.ysyy div.curtain a.mainimg{
+	background:url(../images/hover_bg_small.jpg) no-repeat center center;
+}
+/*Image Loupe*/
+a.ysme_zoom{
+	background:url(../images/gray/ysme_zoom.png) no-repeat left top;
+}
+/***MIDBLOCK***/
+.midblock_bg{
+	background:url(../images/midblock_bg.png) repeat-y right top;
+}
+.top_midblock_bg,.bottom_midblock_bg{
+	background:url(../images/top_midblock_bg.png) no-repeat right top;
+}
+.bottom_midblock_bg{
+	background:url(../images/bottom_midblock_bg.png) no-repeat right bottom;
+}
+/***YJ MORTGAGE CALCULATOR***/
+.ysmc{
+	background:#424242;
+	color:#ababab;
+	text-shadow:1px 1px #323232;
+}
+.ysmc h4{
+	color:#fff!important;
+}
+.ysmc h4 span{
+	color:#fff!important;
+}
+.yj_mor_cal.ysmc p{
+	color:#ababab;
+}
+.ysmc #yj_mor_form{
+	background:url(../images/gray/insetline.png) repeat-x left top;
+}
+.ysmc .yj_mor_lines label{
+	color:#fff!important;
+	text-shadow:1px 1px #323232!important;
+}
+.ysmc .boxFocus,.ysmc #textC,.ysmc #textD{
+	color:#aaaaaa;
+	border:1px solid #1a1a1a!important;
+}
+.ysmc #label_resultbox{
+	background:url(../images/gray/insetline.png) repeat-x left top;
+}
+.ysmc #resultbox{
+	color:#fff;
+	text-shadow:1px 1px #323232;
+}
+/***MODULE SAMPLA YJ3***/
+.yj3{
+	background:#f5f5f5;
+}
+/***MODULE SAMPLA YJ4***/
+.yj4 h4{
+	border-bottom:1px dashed #dddddd;
+}
+/***BOTTOM GRIDS***/
+.bgrids_bg{
+	background:url(../images/bgrids_bg.png) no-repeat center top;
+}
+#yjsg6 .yjsquare,
+#yjsg7 .yjsquare {
+	background:url(../images/bgrids_separator.png) no-repeat right center;
+}
+#yjsg6 #user20 .yjsquare,
+#yjsg7 #user25 .yjsquare {
+	background:none!important;
+}
+/***YOUSOLD LIST***/
+ul.yousold_list li{
+	background:url(../images/gray/bodyli.gif) no-repeat center left;
+}
+/***SUBSCRIBE USER20***/
+.subscribe .inputbox,.subscribe .inputbox_email{
+	border:2px solid #f1f1f1;
+}
+.yousold_button{
+	color:#fff;
+	text-shadow:1px 1px #323232;
+	background:url(../images/gray/yousold_button.png) no-repeat left top;
+}
+/***FOOTER***/
+.footer_l_shadow,.footer_r_shadow{
+	background:url(../images/footer_l_shadow.png) no-repeat left top;
+}
+.footer_r_shadow{
+	background:url(../images/footer_r_shadow.png) no-repeat right top;
+}
+/***DROPLINE EXTRA***/
+/*---Menu dropline extra---*/
+.subul_main.dropline.level1{
+	border-left:4px solid #f0f0f0;
+	border-right:4px solid #f0f0f0;
+}
+/***ADITIONAL***/
+span.dropcap,span.bignumber{
+	color:#424242;
+}
+.newsitem_tools{
+	color:#989898;
+}
+/**K2***/
+/* sub cat read more */
+a.subCategoryMore,div.catItemReadMore,
+.userView .itemReadMore,.tagView .itemReadMore{
+	background:url(../images/gray/readon_l.png) no-repeat left top;
+}
+a.subCategoryMore span,div.catItemReadMore span,
+.userView .itemReadMore span,.tagView .itemReadMore span{
+	background:url(../images/gray/readon_r.png) no-repeat right top;
+}
+a.subCategoryMore:link,
+a.subCategoryMore:visited,
+div.catItemReadMore a:link,
+div.catItemReadMore a:visited,
+.userView .itemReadMore a:link,
+.userView .itemReadMore a:visited,
+.tagView .itemReadMore a:link,
+.tagView .itemReadMore a:visited{
+	color:#fff;
+}
+a.subCategoryMore:hover,
+a.subCategoryMore:focus,
+div.catItemReadMore a:hover,
+div.catItemReadMore a:focus,
+.userView .itemReadMore a:hover,
+.userView .itemReadMore a:focus,
+.tagView .itemReadMore a:hover,
+.tagView .itemReadMore a:focus{
+	color:#bcbcbc;
+}
+#submitCommentButton {
+	background:url(../images/gray/submit_button.png) no-repeat left top!important;
+	color:#fff;
+	text-shadow:1px 1px #323232;
+}
+ul.preSocialLinks li a{
+	background-image: url(../images/gray/socials.png);
+}
+.k2CategoriesListBlock ul li a {
+	background:url(../images/gray/mainlevel.gif) no-repeat left bottom;
+}
+div.k2TagCloudBlock a{
+
+	color:#424242;
+}
+div.k2TagCloudBlock a:hover {
+	background:#424242;
+	color:#989898;
+}

@@ -1,0 +1,337 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/* 1.6 default changes */
+/* can be used in all components as surrounding wrap */
+.component {
+	padding:10px 5px;
+	overflow:hidden;
+	display:block;
+}
+.category {
+	width:100%;
+}
+/* web links*/
+.category-desc {
+	padding:15px 0;
+}
+/* mod preview tp=1*/
+.mod-preview {
+	background:#fff;
+	border: 1px solid red;
+	padding:2px;
+	margin:0 5px;
+}
+div.mod-preview-info {
+	display:none;
+}
+.mod-preview-wrapper .yjsquare_in {
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+}
+/* EDITOR */
+.form_view {
+	padding:10px;
+}
+legend {
+	padding:3px 5px;
+	font-weight:bold;
+}
+form#adminForm {
+}
+.edit form#adminForm fieldset {
+	padding:20px 15px;
+	margin:10px 0 15px 0;
+}
+.formelm {
+	margin:5px 0
+}
+.formelm label {
+	width:13em;
+	display:inline-block;
+	vertical-align:top;
+}
+form#adminForm .formelm-area {
+	padding:5px 0
+}
+form#adminForm .formelm-area label {
+	vertical-align:top;
+	display:inline-block;
+	width:7.9em
+}
+.formelm-buttons {
+	text-align:right;
+	margin-bottom:10px
+}
+#editor-xtd-buttons a, .toggle-editor a {
+	background:#eee;
+	padding:0 5px;
+	height:20px;
+	margin:10px 0 0 0;
+	line-height:20px;
+	border:solid 1px #ddd;
+	font-weight:bold;
+	text-decoration:none;
+}
+.toggle-editor {
+	float:right;
+}
+/* menus 1.6 changes */
+/* Menu item with image only , no text*/
+/* level1*/
+span.no_text {
+	padding:5px 0 0 0!important;
+	display:block;
+}
+/* all other levels*/
+ul.subul_main span.no_text {
+	padding:3px 0 3px 10px!important;
+	height:26px!important;
+}
+/* actual image class that you can use*/
+img.imsolo_mega {
+}
+/* footer menu links*/
+#footer a.mainlevel {
+	background:none;
+	display:inline;
+	text-indent:0!important;
+}
+/* mail to*/
+#mailtoForm{
+	padding:0 5px;
+	background:#efefef;
+	border:1px solid #ccc;
+	margin:0 10px;
+}
+#mailtoForm label{
+	width:100px;
+}
+.mailto-close {
+	position:absolute;
+	right:0;
+	top:62px;
+	background:none;
+}
+.mailto-close a {
+	background:url(../images/system/closebox.gif) no-repeat !important;
+	min-width:22px;
+	display:block;
+	min-height:22px;
+	overflow:visible;
+}
+.mailto-close a span {
+	position:absolute;
+	left:-3000px;
+	top:-3000px;
+	display:inline;
+}
+.warning ul{
+	text-align:left;
+	padding-left:0;
+
+}
+/* default system 
+--------------------- */
+/* Tooltips */
+.tip {
+	float: left;
+	background: #ffc;
+	border: 1px solid #D4D5AA;
+	padding: 5px;
+	max-width: 200px;
+	text-align:left;
+}
+.tip-title {
+	padding: 0;
+	margin: 0;
+	font-size:12px;
+	font-weight: bold;
+	margin-top: -15px;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	text-align:left;
+	background: url(../../system/images/selector-arrow.png) no-repeat;
+}
+.tip-text {
+	font-size:11px;
+	margin: 0;
+	text-align:left;
+}
+/*Mail to*/
+#mailto-window {
+/*padding:0 10px;*/
+}
+/* OpenID icon style */
+input.system-openid {
+	background: url(http://openid.net/login-bg.gif) no-repeat;
+	background-color: #fff;
+	background-position: 0 50%;
+	color: #000;
+	padding-left: 18px;
+}
+/* Unpublished */
+.system-unpublished {
+	background: #FDFDFD;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+}
+/* System Messages */
+#system-message {
+	margin-bottom: 10px;
+	padding: 0;
+}
+#system-message dt {
+	font-weight: bold;
+}
+#system-message dd {
+	margin: 0;
+	font-weight: bold;
+	text-indent: 30px;
+	background-image:none;
+}
+#system-message dd ul {
+	background-color:#FDFDFD;
+	color: #c02;
+	margin-bottom: 10px;
+	list-style: none;
+	padding: 10px;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+}
+/* System Standard Messages */
+#system-message dt.message {
+	display: none;
+}
+#system-message dd.message {
+}
+#system-message dd.message ul li {
+	background-image:none;
+}
+/* System Error Messages */
+#system-message dt.error {
+	display: none;
+}
+#system-message dd.error ul {
+	color: #c00;
+	background-color: #FDFDFD;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+}
+#system-message dd.error ul li {
+	background-image:none;
+}
+/* System Notice Messages */
+#system-message dt.notice {
+	display: none;
+}
+#system-message dd.notice ul {
+	color: #c00;
+	background: #FDFDFD;
+	border-top: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+}
+#system-message dd.notice ul li {
+	background-image:none;
+}
+/* Debug */
+#system-debug {
+	color: #ccc;
+	background-color: #fff;
+	padding: 10px;
+	margin: 10px;
+	text-align:left;
+}
+#system-debug div {
+	font-size: 11px;
+}
+/* Form validation */
+.invalid {
+	border-color: #ff0000;
+}
+label.invalid {
+	color: #ff0000;
+}
+/* Editor */
+#editor-xtd-buttons {
+	padding: 5px;
+}
+
+.button2-left,.button2-right {
+	float: left;
+	margin-left: 5px;
+}
+
+/* from joomla 2.5 */
+/* intro image holder*/
+div.img-introtext-left{
+	float:left;
+	margin:10px 10px 0 0;
+}
+div.img-introtext-right{
+	float:right;
+	margin:10px 0 0 10px;
+}
+div.img-introtext-none{
+	clear:both;
+	margin:0;
+}
+/* full image holder*/
+div.img-fulltext-left{
+	float:left;
+	margin:10px 10px 0 0;
+}
+div.img-fulltext-right{
+	float:right;
+	margin:10px 0 0 10px;
+}
+div.img-fulltext-none{
+	clear:both;
+	margin:0;
+}
+/* content links */
+div.content-links ul{
+}
+/* captcha */
+.yjcaptcha .userpages,
+.yjcaptcha #userpages{
+	width:500px;
+}
+table#recaptcha_table{
+	border:none!important;
+}
+input#recaptcha_response_field{
+	border:1px solid #ccc!important;
+}
+/* smart search */
+#mod-finder-advanced ul{
+	margin:10px 0 0 0;
+	padding:0;
+}
+#mod-finder-advanced ul li{
+	background:none;
+	padding:0;
+}
+#mod-finder-advanced label{
+	width:180px;
+	display:inline-block;
+}
+#mod-finder-advanced select{
+	padding:2px 0 2px 10px;
+	text-indent:-2px;
+}
+a.yjanchor.last{
+	border-bottom:none!important;
+}
+
